@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: ⬇️ 의존성 설치
-        run: pnpm install
+        run: npm install
 
       - name: 📦 프로젝트 빌드
         run: npm run build
