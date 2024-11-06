@@ -22,7 +22,7 @@ export default function MainSection() {
               name="Google Play"
             />
             <StoreButton
-              href={'mailto:rlfehd2013@naver.com'}
+              href="https://apps.apple.com/kr/app/dev-feed/id6737579223"
               src="appStore.png"
               name="Apple Store"
             />
