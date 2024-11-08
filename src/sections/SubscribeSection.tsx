@@ -1,12 +1,6 @@
-import { useFocusAnimation } from '@rapiders/react-hooks';
 import SectionLayout from '../components/SectionLayout';
 
 export default function SubscribeSection() {
-  const ref = useFocusAnimation<HTMLDivElement>(
-    'animate-fadeInRight',
-    'animate-fadeOutRight'
-  );
-
   return (
     <SectionLayout full>
       <div className="w-full items-center justify-center flex">
@@ -24,7 +18,7 @@ export default function SubscribeSection() {
               </div>
             </div>
           </div>
-          <div ref={ref} className="flex basis-1/3 pc:basis-[40%]">
+          <div className="flex basis-1/3 pc:basis-[40%]">
             <img src="/subscribe.png" className="w-1/2" />
             <img src="/subscribeVelog.png" className="w-1/2" />
           </div>
