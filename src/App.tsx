@@ -4,7 +4,7 @@ import SubscribeSection from './sections/SubscribeSection';
 
 function App() {
   return (
-    <div className="bg-[#121212CC] w-full h-full font-pretendard text-white items-center justify-center flex flex-col">
+    <div className="w-full h-full font-pretendard text-white items-center justify-center flex flex-col">
       <MainSection />
       <IntroSection />
       <SubscribeSection />

@@ -140,3 +140,6 @@ body {
   min-height: 100%;
   scroll-snap-type: y mandatory;
 }
+html {
+  background-color: #121212cc;
+}
