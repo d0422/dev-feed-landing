@@ -15,7 +15,10 @@ export default function SubscribeSection() {
               <div>다양한 방식의 구독</div>
             </div>
             <div className="flex flex-col gap-4 mobile:items-center text-[20px] mobile:text-[16px] ">
-              <div>Dev-Feed에서는 세가지 방식으로 구독할 수 있어요.</div>
+              <div className="flex flex-col gap-1.5 mobile:items-center">
+                <div>Dev-Feed에서는 아래 </div>
+                <div>세가지 방식으로 구독할 수 있어요.</div>
+              </div>
               <div className="flex-col gap-1.5 flex">
                 <div>1. 웹 탐색 중 구독</div>
                 <div>2. 다양한 테크회사의 블로그</div>
