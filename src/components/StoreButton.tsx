@@ -1,3 +1,5 @@
+import Image from './Image';
+
 interface StoreButtonProps {
   src: string;
   name: string;
@@ -11,7 +13,11 @@ export default function StoreButton({ src, name, href }: StoreButtonProps) {
       target="_blank"
       className="bg-black rounded-xl p-2.5 px-6 flex items-center gap-4"
     >
-      <img src={src} className="w-7 mobile:w-5" />
+      <Image
+        srcFilename={src}
+        className="w-7 mobile:w-5"
+        alt={`${name}-스토어-버튼`}
+      />
       <div className="text-white">{name}</div>
     </a>
   );

@@ -1,3 +1,4 @@
+import Image from '../components/Image';
 import SectionLayout from '../components/SectionLayout';
 import StoreButton from '../components/StoreButton';
 
@@ -18,17 +19,21 @@ export default function MainSection() {
           <div className="flex gap-4">
             <StoreButton
               href="https://play.google.com/apps/testing/com.devfeed"
-              src="googlePlay.png"
+              src="googlePlay"
               name="Google Play"
             />
             <StoreButton
               href="https://apps.apple.com/kr/app/dev-feed/id6737579223"
-              src="appStore.png"
+              src="appStore"
               name="Apple Store"
             />
           </div>
         </div>
-        <img src="/main.png" className="w-1/4 min-w-32" />
+        <Image
+          srcFilename="main"
+          className="w-1/4 min-w-32"
+          alt="앱 메인이미지"
+        />
       </div>
     </SectionLayout>
   );

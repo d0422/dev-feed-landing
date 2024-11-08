@@ -1,5 +1,6 @@
 import { useFocusAnimation } from '@rapiders/react-hooks';
 import SectionLayout from '../components/SectionLayout';
+import Image from '../components/Image';
 
 export default function SubscribeSection() {
   const ref = useFocusAnimation<HTMLDivElement>(
@@ -27,8 +28,12 @@ export default function SubscribeSection() {
             </div>
           </div>
           <div className="flex basis-1/3 pc:basis-[40%]">
-            <img src="/subscribe.png" className="w-1/2" />
-            <img src="/subscribeVelog.png" className="w-1/2" />
+            <Image srcFilename="search" className="w-1/2" alt="구독이미지" />
+            <Image
+              srcFilename="velog"
+              className="w-1/2"
+              alt="벨로그 구독이미지"
+            />
           </div>
         </div>
       </div>
