@@ -20,7 +20,7 @@ export default function SectionLayout({
 
   return (
     <div
-      className={`flex justify-center items-center py-12 snap-start flex-col relative overflow-hidden ${
+      className={`flex justify-center items-center py-12 snap-end flex-col relative overflow-hidden ${
         full ? 'min-h-[100dvh]' : 'h-full'
       }`}
     >
