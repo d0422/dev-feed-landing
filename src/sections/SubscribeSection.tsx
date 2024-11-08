@@ -1,9 +1,14 @@
+import { useFocusAnimation } from '@rapiders/react-hooks';
 import SectionLayout from '../components/SectionLayout';
 
 export default function SubscribeSection() {
+  const ref = useFocusAnimation<HTMLDivElement>(
+    'animate-fadeInBottom',
+    'animate-fadeOutBottom'
+  );
   return (
     <SectionLayout full>
-      <div className="w-full items-center justify-center flex">
+      <div className="w-full items-center justify-center flex" ref={ref}>
         <div className="w-[80%] items-center justify-center flex gap-8 mobile:gap-4 mobile:flex-col-reverse">
           <div className="flex-col gap-6 flex basis-1/3">
             <div className="font-bold text-[40px]  mobile:text-[20px] tablet:text-[30px]  gap-1 flex flex-col mobile:items-center">

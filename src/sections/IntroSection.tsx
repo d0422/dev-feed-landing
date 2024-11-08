@@ -3,14 +3,14 @@ import SectionLayout from '../components/SectionLayout';
 
 export default function IntroSection() {
   const ref = useFocusAnimation<HTMLDivElement>(
-    'animate-fadeInLeft',
-    'animate-fadeOutLeft'
+    'animate-fadeInBottom',
+    'animate-fadeOutBottom'
   );
   return (
     <SectionLayout full>
-      <div className="w-full items-center justify-center flex">
+      <div className="w-full items-center justify-center flex" ref={ref}>
         <div className="w-[80%] items-center justify-center flex gap-8 mobile:gap-4 mobile:flex-col">
-          <div ref={ref} className="flex basis-1/3 pc:basis-[40%]">
+          <div className="flex basis-1/3 pc:basis-[40%]">
             <img src="/feed.png" className="w-1/2" />
             <img src="/read.png" className="w-1/2" />
           </div>

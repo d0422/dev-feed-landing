@@ -22,12 +22,22 @@ export default {
           '0%': { transform: 'translate(0%)', opacity: 1 },
           '100%': { transform: 'translate(100%)', opacity: 0 },
         },
+        fadeInBottom: {
+          '0%': { transform: 'translateY(30%)', opacity: 0 },
+          '100%': { transform: 'translate(0%)', opacity: 1 },
+        },
+        fadeOutBottom: {
+          '0%': { transform: 'translate(0%)', opacity: 1 },
+          '100%': { transform: 'translate(30%)', opacity: 0 },
+        },
       },
       animation: {
         fadeInLeft: 'fadeInLeft 500ms linear ',
         fadeOutLeft: 'fadeOutLeft 500ms linear forwards',
         fadeInRight: 'fadeInRight 500ms linear ',
         fadeOutRight: 'fadeOutRight 500ms linear forwards',
+        fadeInBottom: 'fadeInBottom 1s linear ',
+        fadeOutBottom: 'fadeOutBottom 500ms linear forwards',
       },
       fontFamily: {
         pretendard: 'Pretendard-Regular',
