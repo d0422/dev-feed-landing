@@ -9,7 +9,7 @@ export default function Image({ srcFilename, className, alt }: ImageProps) {
     <picture className={className}>
       <source srcSet={`picture/webp/${srcFilename}.webp`} type="image/webp" />
       <source srcSet={`picture/png/${srcFilename}.png`} type="image/png" />
-      <img src={`picture/png/${srcFilename}.png`} alt={alt} />
+      <img src={`picture/png/${srcFilename}.png`} alt={alt} draggable={false} />
     </picture>
   );
 }
