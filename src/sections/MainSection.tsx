@@ -18,7 +18,7 @@ export default function MainSection() {
           </div>
           <div className="flex gap-4">
             <StoreButton
-              href="https://play.google.com/apps/testing/com.devfeed"
+              href="https://play.google.com/store/apps/details?id=com.devfeed"
               src="googlePlay"
               name="Google Play"
             />
