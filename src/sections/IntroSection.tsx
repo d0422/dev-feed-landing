@@ -42,7 +42,7 @@ export default function IntroSection() {
   return (
     <SectionLayout full showArrow={!intervalRunning}>
       <div
-        className="text-[50px] mobile:text-[25px] whitespace-pre-wrap"
+        className="text-[50px] mobile:text-[20px] whitespace-pre-wrap"
         ref={focusRef}
       >
         <AnimationWrapper>{MESSAGE[messageIndex]}</AnimationWrapper>
