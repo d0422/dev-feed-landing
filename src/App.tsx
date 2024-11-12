@@ -1,5 +1,6 @@
 import BookmarkSection from './sections/BookmarkSection';
 import FeedSection from './sections/FeedSection';
+import FooterSection from './sections/FooterSection';
 import IntroSection from './sections/IntroSection';
 import MainSection from './sections/MainSection';
 import SubscribeSection from './sections/SubscribeSection';
@@ -12,6 +13,7 @@ function App() {
       <FeedSection />
       <SubscribeSection />
       <BookmarkSection />
+      <FooterSection />
     </div>
   );
 }
