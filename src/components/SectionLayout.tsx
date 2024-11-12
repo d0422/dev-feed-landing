@@ -1,9 +1,4 @@
-import {
-  ForwardedRef,
-  forwardRef,
-  MutableRefObject,
-  PropsWithChildren,
-} from 'react';
+import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
 import Arrow from './Arrow';
 
 interface SectionLayoutProps {

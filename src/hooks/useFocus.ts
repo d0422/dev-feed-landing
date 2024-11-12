@@ -18,10 +18,16 @@ export default function useFocus<T extends HTMLElement>({
   const handleScroll: IntersectionObserverCallback = useCallback(([entry]) => {
     const { current } = elementRef;
     if (current) {
-      if (entry.isIntersecting) {
-        onFocusCallback && onFocusCallback();
+      if (
+        entry.isIntersecting &&
+        onFocusCallback &&
+        typeof onFocusOutCallback === 'function'
+      ) {
+        onFocusCallback();
       } else {
-        onFocusOutCallback && onFocusOutCallback();
+        if (onFocusOutCallback && typeof onFocusCallback === 'function') {
+          onFocusOutCallback();
+        }
       }
     }
   }, []);
