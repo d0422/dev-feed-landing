@@ -20,10 +20,11 @@ const SectionLayout = forwardRef(
 
     return (
       <div
-        className={`flex justify-center items-center py-12 snap-end flex-col relative overflow-hidden w-full ${
+        className={`flex justify-between items-center py-12 snap-end flex-col relative overflow-hidden w-full ${
           full ? 'min-h-[100svh]' : 'h-full'
         }`}
       >
+        <div />
         <div className="w-full items-center justify-center flex">
           <div
             className="w-[80%] items-center mobile:justify-center justify-evenly flex gap-8 mobile:gap-4 mobile:flex-col"
@@ -32,10 +33,12 @@ const SectionLayout = forwardRef(
             {children}
           </div>
         </div>
-        {showArrow && (
-          <button className="absolute bottom-6 animate-bounce" onClick={scroll}>
+        {showArrow ? (
+          <button className=" animate-bounce" onClick={scroll}>
             <Arrow />
           </button>
+        ) : (
+          <div />
         )}
       </div>
     );
