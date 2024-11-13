@@ -62,7 +62,7 @@ export default function FeedSection() {
         </CarouselWrapper>
       </div>
       <div className="flex-col gap-6 flex basis-1/3" ref={focusRef}>
-        <div className="font-bold  gap-1 flex flex-col mobile:items-center">
+        <div className="flex flex-col mobile:items-center">
           <Font type="title2">나만의 개발 블로그 피드</Font>
         </div>
         <div className="flex flex-col gap-1 mobile:items-center">

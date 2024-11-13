@@ -8,7 +8,7 @@ export default function SubscribeSection() {
   return (
     <SectionLayout full ref={ref}>
       <div className="flex-col gap-6 flex basis-1/3">
-        <div className="font-bold  gap-1 flex flex-col mobile:items-center justify-start">
+        <div className="gap-1 flex flex-col mobile:items-center justify-start">
           <Font type="title2">다양한 방식의 구독</Font>
         </div>
         <div className="flex flex-col gap-4 mobile:items-center text-body1 ">
