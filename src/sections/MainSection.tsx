@@ -1,3 +1,4 @@
+import Font from '../components/Font';
 import Image from '../components/Image';
 import SectionLayout from '../components/SectionLayout';
 import StoreButton from '../components/StoreButton';
@@ -7,10 +8,10 @@ export default function MainSection() {
     <SectionLayout full showArrow>
       <div className="flex justify-evenly items-center w-[80%] mobile:gap-4 mobile:flex-col-reverse">
         <div className=" h-full items-start flex flex-col justify-center gap-6 mobile:items-center">
-          <div className="text-[50px] mobile:text-[35px]">Dev-Feed</div>
-          <div className="font- text-[25px]  mobile:text-[20px] tablet:text-[30px]  gap-1 flex flex-col mobile:items-center">
-            <div>로그인 없는</div>
-            <div>간편한 개발 블로그 구독 서비스</div>
+          <Font type="title">Dev-Feed</Font>
+          <div className="gap-1 flex flex-col mobile:items-center">
+            <Font type="body1">로그인 없는</Font>
+            <Font type="body1">간편한 개발 블로그 구독 서비스</Font>
           </div>
           <div className="flex gap-4">
             <StoreButton

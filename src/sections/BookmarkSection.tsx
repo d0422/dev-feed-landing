@@ -1,3 +1,4 @@
+import Font from '../components/Font';
 import Image from '../components/Image';
 import SectionLayout from '../components/SectionLayout';
 import useAppFocusAnimation from '../hooks/useAppFocusAnimation';
@@ -7,14 +8,14 @@ export default function BookmarkSection() {
   return (
     <SectionLayout full ref={ref}>
       <div className="flex flex-col gap-2.5">
-        <div className="text-[40px] mobile:text-[30px]">
-          <p>마음에 드는 글은</p>
-          <p>북마크로 저장해요</p>
+        <div>
+          <Font type="title2">마음에 드는 글은</Font>
+          <Font type="title2">북마크로 저장해요</Font>
         </div>
-        <div className="flex flex-col gap-1">
-          <p>글을 읽다가, 글이 마음에 든다면</p>
-          <p>오른쪽 아래 북마크 버튼을 </p>
-          <p>클릭해서 간편하게 추가해봐요</p>
+        <div className="flex flex-col gap-1 justify-center mobile:items-center">
+          <Font type="body2">글을 읽다가, 글이 마음에 든다면</Font>
+          <Font type="body2">오른쪽 아래 북마크 버튼을 </Font>
+          <Font type="body2">클릭해서 간편하게 추가해봐요</Font>
         </div>
       </div>
 

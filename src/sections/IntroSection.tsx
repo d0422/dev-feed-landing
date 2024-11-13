@@ -2,6 +2,7 @@ import { useAnimation, useInterval } from '@rapiders/react-hooks';
 import SectionLayout from '../components/SectionLayout';
 import { useState } from 'react';
 import useFocus from '../hooks/useFocus';
+import Font from '../components/Font';
 
 const MESSAGE = [
   '개발 블로그, 어떻게 읽고 계세요?',
@@ -41,11 +42,10 @@ export default function IntroSection() {
 
   return (
     <SectionLayout full showArrow={!intervalRunning}>
-      <div
-        className="text-[50px] mobile:text-[20px] whitespace-pre-wrap"
-        ref={focusRef}
-      >
-        <AnimationWrapper>{MESSAGE[messageIndex]}</AnimationWrapper>
+      <div ref={focusRef}>
+        <AnimationWrapper>
+          <Font type="introText">{MESSAGE[messageIndex]}</Font>
+        </AnimationWrapper>
       </div>
     </SectionLayout>
   );
