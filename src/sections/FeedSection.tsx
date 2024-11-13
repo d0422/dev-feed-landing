@@ -47,8 +47,8 @@ export default function FeedSection() {
   }, [isDragging]);
 
   return (
-    <SectionLayout full>
-      <div className="w-full pc:w-1/4 mobile:w-2/3" ref={resetRef}>
+    <SectionLayout full ref={focusRef}>
+      <div className="w-full pc:w-1/4 mobile:w-2/3 tablet:w-1/3" ref={resetRef}>
         <CarouselWrapper ref={ref}>
           {IMAGE.map((image) => (
             <div className="w-full" key={image.fileName}>
@@ -61,7 +61,7 @@ export default function FeedSection() {
           ))}
         </CarouselWrapper>
       </div>
-      <div className="flex-col gap-6 flex basis-1/3" ref={focusRef}>
+      <div className="flex-col gap-6 flex basis-1/3">
         <div className="flex flex-col mobile:items-center">
           <Font type="title2">나만의 개발 블로그 피드</Font>
         </div>
